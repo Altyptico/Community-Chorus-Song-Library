@@ -1,13 +1,15 @@
 new Vue ({
     el:"#selector-app",
     data: {
-        show: true
+        selected:'Filtering Options',
+        option: [
+            {text: 'Artist', value: 'Artist'},
+            {text: 'Genre', value: 'Genre'},
+            {text: 'Time Period', value: 'Time Period'}
+        ]
     },
-    method: {
-        openMenu: function(){
-
+    methods: {
 
         }
-    }
 
 });
