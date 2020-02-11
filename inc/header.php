@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,12 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Lalezar|Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <title>{{title}}</title>
+    
 </head>
 <body>
-  
+<!-- must learn about Routes - https://router.vuejs.org/-->
+
 <h1>Song Library</h1>
 <div id="selector-app">
                 <ul class= "inputField">
+                    <li><a href="">Suggest a song</a></li>
                     <li>
                         <label> 
                         <input></input>
@@ -20,7 +23,7 @@
                         <!--dropdown menu-->
                         <!--Is is recommended to provide a disabled option with an empty value..https://vuejs.org/v2/guide/forms.html?-->
                                 <li>
-                                    <span>{{ selected }} </span>
+                                    <span>Filtering Options: </span>
                                     <select v-model="selected">
                                         <!-- Dynamica options to show what is selected next to dropdown -->
                                         <option disabled value="" v-for="option in options" v-bind:value="option.value">Filtering Options:</option>
@@ -31,7 +34,7 @@
                                     </select>
                                    
                                 </li>
-                    <li>#home</li>
+                    <li><a href="index.php">Home</a></li>
                 </ul>
 </div>
 
